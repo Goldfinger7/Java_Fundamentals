@@ -1,4 +1,4 @@
-package com.fundamentals.softuni.string_formatter;
+package com.programming_basics.softuni.string_formatter;
 
 import java.util.Scanner;
 
