@@ -1,4 +1,4 @@
-package com.programming_basics.softuni.BR_TradeCommissions;
+package com.programming_basics.softuni.BQ_TradeCommissions;
 
 import java.util.Scanner;
 
