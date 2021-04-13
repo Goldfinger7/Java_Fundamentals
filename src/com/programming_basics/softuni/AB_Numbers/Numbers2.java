@@ -1,6 +1,6 @@
-package com.programming_basics.softuni.AB_Numbers1To10;
+package com.programming_basics.softuni.AB_Numbers;
 
-import java.util.*;
+import java.util.Scanner;
 
 public class Numbers2 {
     public static void main(String[] args) {
@@ -23,7 +23,9 @@ public class Numbers2 {
 
                 if (number < oddMin) {
                     oddMin = number;
-                } else if (number > oddMax) {
+                }
+
+                if (number > oddMax) {
                     oddMax = number;
                 }
             } else {
@@ -31,7 +33,9 @@ public class Numbers2 {
 
                 if (number < evenMin) {
                     evenMin = number;
-                } else if (number > evenMax) {
+                }
+
+                if (number > evenMax) {
                     evenMax = number;
                 }
             }
@@ -39,11 +43,16 @@ public class Numbers2 {
 
         System.out.printf("OddSum=%.2f,%n", oddSum);
         if (oddSum == 0) {
-            System.out.printf("OddMin=No,%nOddMax=No,");
+            System.out.printf("OddMin=No,%nOddMax=No,%n");
         } else {
-            System.out.printf("OddMin=%.2f,%n", oddMin);
-            System.out.printf("OddMax=%.2f,%n", oddMax);
+            System.out.printf("OddMin=%.2f,%nOddMax=%.2f,%n", oddMin, oddMax);
         }
 
+        System.out.printf("EvenSum=%.2f,%n", evenSum);
+        if (evenSum == 0) {
+            System.out.printf("EvenMin=No,%nEvenMax=No");
+        } else {
+            System.out.printf("EvenMin=%.2f,%nEvenMax=%.2f", evenMin, evenMax);
+        }
     }
 }
